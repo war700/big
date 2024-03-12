@@ -1,123 +1,102 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="nl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=iso-8859-15" />
-	<title>Budgetplanner - Budgetplanner</title>
-
-<meta http-equiv="content-language" content="nl" />
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<meta name="generator" content="Fork CMS" />
-<meta name="description" content="Budgetplanner" />
-<meta name="keywords" content="Budgetplanner" />
-
-
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="image_src" href="/modules/core/layout/images/image_src.jpg" />
-
-
-<link rel="stylesheet" type="text/css" media="screen" href="/modules/core/layout/css/screen.css" />
-<link rel="stylesheet" type="text/css" media="print" href="/modules/core/layout/css/print.css" />
-
-
-<!--[if lte IE 6]>
-	<link rel="stylesheet" type="text/css" href="/modules/core/layout/css/ie6.css" />
-	<script src="/modules/core/js/pngfix.js"></script>
-	<script>
-	  DD_belatedPNG.fix('.pngfix');
-	</script>
-<![endif]-->
-<!--[if IE 7]><link rel="stylesheet" type="text/css" href="/modules/core/layout/css/ie7.css" /><![endif]-->
-
-<script type="text/javascript" src="/modules/core/js/jquery/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="/modules/core/js/scripts.js"></script>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+    <!-- Your existing metadata, stylesheets, and scripts -->
+    <!-- I've assumed your existing CSS and JS files are linked here -->
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-15" />
+    <meta http-equiv="content-language" content="nl" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="generator" content="Fork CMS" />
+    <meta name="description" content="Budgetplanner" />
+    <meta name="keywords" content="Budgetplanner" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="image_src" href="/modules/core/layout/images/image_src.jpg" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/modules/core/layout/css/screen.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/modules/core/layout/css/print.css" />
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" href="/modules/core/layout/css/ie6.css" />
+    <script src="/modules/core/js/pngfix.js"></script>
+    <script>
+        DD_belatedPNG.fix('.pngfix');
+    </script>
+    <![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="/modules/core/layout/css/ie7.css" /><![endif]-->
+    <script type="text/javascript" src="/modules/core/js/jquery/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/modules/core/js/scripts.js"></script>
 </head>
 <body id="home" class="nl onsite">
-	<div id="container">
-		<div id="header">
-			<div id="logo">
-				<h1><a href="/" title="Budgetplanner">Budgetplanner</a></h1>
-			</div>
+<header>
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <h1><a href="/" title="Budgetplanner">Budgetplanner</a></h1>
+            </div>
+            <div id="navigation" class="clearfix">
+                <ul>
+                    <li class="selected">
+                        <a href="/" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="/budgetplanner" title="Budgetplanner">Budgetplanner</a>
+                    </li>
+                    <li>
+                        <a href="/over-budgetplanner" title="Over budgetplanner">Over budgetplanner</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
 
-			<div id="navigation" class="clearfix">
-				<ul>
-	<li class="selected">
-		<a href="/" title="Home">Home</a>
-</li>
-	<li>
-		<a href="/budgetplanner" title="Budgetplanner">Budgetplanner</a>
-</li>
-	<li>
-		<a href="/over-budgetplanner" title="About budgetplanner">About budgetplanner</a>
-</li>
-</ul>
+<main>
+    <div id="main">
+        <div id="intro" class="clearfix">
+            <h2>Budgetplanner</h2>
+            <p>De budgetplanner helpt je om een overzicht te maken van je inkomsten en je uitgaven. Vul alleen de vakjes in die nodig zijn,&nbsp;de andere mag je leeg laten.&nbsp;</p>
+            <p>LET OP: Deze budgetplanner heeft geen bewaar- of exportfunctie. Wil je  je gegevens bewaren, zal je ze op een document moeten noteren. Deze  website kan dan telkens wel voor jouw de nodige berekeningen doen, ook  als je later bepaalde bedragen veranderd, geschrapt of toegevoegd  hebt.</p>
+        </div>
 
-			</div>
-		</div>
+        <div id="wizardOverview" class="clearfix">
+            <div id="income" class="wizardBlock firstChild">
+                <h2>1. Inkomsten</h2>
+                <p>Wat is je inkomen? Hoeveel verdien je? Of welke uitkering krijg je?</p>
+            </div>
+            <div id="expense" class="wizardBlock">
+                <h2>2. Uitgaven</h2>
+                <p>Hoeveel geef je per maand uit aan je huis, je auto, je vaste kosten, aan eten en drinken?</p>
+            </div>
+            <div id="saving" class="wizardBlock">
+                <h2>3. Sparen</h2>
+                <p>Probeer elke maand te sparen voor iets wat je graag wil hebben of om onverwachte gebeurtenissen in je leven op te vangen.</p>
+            </div>
+            <div id="result" class="wizardBlock">
+                <h2>4. Resultaat</h2>
+                <p>Hoeveel geld hou je aan het eind van de maand over? Of kom je op het eind van de maand niet rond?</p>
+            </div>
+        </div>
 
-		<div id="main">
-			<div id="intro" class="clearfix">
-				<h2>Budgetplanner</h2>
-				<p>The budget planner helps you to create an overview of your income and expenses. Only fill in the boxes that are necessary; you can leave the others blank.</p>
-<p>NOTE: This budget planner does not have a save or export function. If you want to save your data, you will need to write them down on a document. However, this website can always perform the necessary calculations for you, even if you later change, delete, or add certain amounts.</p>
-			</div>
+        <div id="startBudgetting">
+            <a class="button" href="/budgetplanner"><span>Start de budgetplanner</span><i>&nbsp;</i></a>
+        </div>
+    </div>
+</main>
 
-			<div id="wizardOverview" class="clearfix">
-				
-				<div id="income" class="wizardBlock firstChild">
-					<h2>1. Income</h2>
-					<p>What is your income? How much do you earn? Or what benefits do you receive?</p>
-				</div>
-				
-
-				
-				<div id="expense" class="wizardBlock">
-					<h2>2. Expenses</h2>
-					<p>How much do you spend per month on your house, car, fixed costs, food, and drinks?</p>
-				</div>
-				
-
-				
-				<div id="saving" class="wizardBlock">
-					<h2>3. Savings</h2>
-					<p>Try to save every month for something you would like to have or to cope with unexpected events in your life.</p>
-				</div>
-				
-
-				
-				<div id="result" class="wizardBlock">
-					<h2>4. Result</h2>
-					<p>How much money do you have left at the end of the month? Or do you not make ends meet at the end of the month?</p>
-				</div>
-				
-			</div>
-
-			<div id="startBudgetting">
-				<a class="button" href="/budgetplanner"><span>Start the budget planner</span><i>&nbsp;</i></a>
-			</div>
-
-			
-
-		</div>
-		<div id="footer" class="clearfix">
-			
-
-<p>&copy; Budgetplanner 2024</p>
-<ul class="footerNavigation floatLeft">
-		<li><a href="/disclaimer-en-privacy" title="Disclaimer and privacy">Disclaimer and privacy</a></li>
-	<li><a href="/sitemap" title="Sitemap">Sitemap</a></li>
-
-	<li><a href="http://www.netlash.com" title="Netlash Webdesign and Graphic design">Webdesign Netlash</a></li>
-</ul>
-
-<ul class="footerNavigation noPadding floatRight">
-<li><img src="/userfiles/images/samlogo.png" alt="" width="184" height="38" /></li>
-<li><a id="vlo" title="Flemish Government" href="http://www.vlaanderen.be">Flemish Government</a></li>
-</ul>
-
-
-
-		</div>
-	</div>
+<footer>
+    <div id="footer" class="clearfix">
+        <p>&copy; Budgetplanner 2024</p>
+        <ul class="footerNavigation floatLeft">
+            <li><a href="/disclaimer-en-privacy" title="Disclaimer en privacy">Disclaimer en privacy</a></li>
+            <li><a href="/sitemap" title="Sitemap">Sitemap</a></li>
+            <li><a href="http://www.netlash.com" title="Netlash Webdesign en Grafisch ontwerp">Webdesign Netlash</a></li>
+        </ul>
+        <ul class="footerNavigation noPadding floatRight">
+            <li><img src="/userfiles/images/samlogo.png" alt="" width="184" height="38" /></li>
+            <li><a id="vlo" title="Vlaamse Overheid" href="http://www.vlaanderen.be">Vlaamse Overheid</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
